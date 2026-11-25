@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
@@ -136,6 +136,7 @@
 
     <div class="row g-4 justify-content-center">
 
+        <!-- Patient Management -->
         <div class="col-md-5 col-lg-4">
 
             <div class="card module-card p-4 text-center">
@@ -166,6 +167,39 @@
 
         </div>
 
+        <!-- Doctor Management - NEW MODULE -->
+        <div class="col-md-5 col-lg-4">
+
+            <div class="card module-card p-4 text-center">
+
+                <div class="card-body">
+
+                    <div class="module-icon">👨‍⚕️</div>
+
+                    <h4 class="fw-bold">Doctor Management</h4>
+
+                    <p class="text-muted">
+                        Register doctors and manage their specializations,
+                        departments and availability.
+                    </p>
+
+                    <a th:href="@{/doctors}"
+                       class="btn btn-teal w-100">
+                        View Doctors
+                    </a>
+
+                    <a th:href="@{/doctors/register}"
+                       class="btn btn-outline-success w-100 mt-2">
+                        Register New Doctor
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Appointments -->
         <div class="col-md-5 col-lg-4">
 
             <div class="card module-card p-4 text-center">
@@ -201,3 +235,4 @@
 
 </body>
 </html>
+```
